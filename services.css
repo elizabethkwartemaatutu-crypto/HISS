@@ -1,0 +1,320 @@
+html,
+body {
+    background-color: #FFFFFF;
+    color: #1F1F1F;
+}
+
+.services-hero {
+    background: radial-gradient(circle at top left, rgba(255, 184, 0, 0.14), transparent 48%), #FFFFFF;
+    border-top: 2px solid #FFB800;
+    border-bottom: 2px solid #FFB800;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.services-hero h2 {
+    color: #FFB800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 2.2em;
+    margin-bottom: 14px;
+}
+
+.services-hero p {
+    color: #1F1F1F;
+    line-height: 1.8;
+    margin-bottom: 6px;
+}
+
+.services-shell {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    display: grid;
+    grid-template-columns: minmax(0, 1.25fr) minmax(300px, 0.9fr);
+    gap: 26px;
+    align-items: start;
+    background-color: #FFFFFF;
+}
+
+.services-page {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
+}
+
+.service-block {
+    background-color: #FFFFFF;
+    border: 1px solid rgba(31, 31, 31, 0.12);
+    border-radius: 10px;
+    border-top: 2px solid transparent;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.service-block::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/HARMONY LOGO 2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.07;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.service-block:hover::before {
+    opacity: 0.16;
+}
+
+.service-symbol,
+.service-block h3,
+.service-block p,
+.service-block ul {
+    position: relative;
+    z-index: 1;
+}
+
+.service-block:hover,
+.service-block:focus-within {
+    transform: translateY(-3px);
+    border-color: #6a5a24;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.45);
+}
+
+.service-block.is-active {
+    border-top-color: #FFB800;
+    border-color: #8f7825;
+    box-shadow: 0 12px 28px rgba(255, 184, 0, 0.12);
+}
+
+.service-symbol {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.35em;
+    background-color: #FFB800;
+    border: 1px solid rgba(31, 31, 31, 0.12);
+    margin-bottom: 12px;
+    color: #1F1F1F;
+}
+
+.service-block h3 {
+    color: #FFB800;
+    margin-bottom: 0;
+    font-size: 1.15em;
+    line-height: 1.4;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.service-block h3::after {
+    content: 'View';
+    color: #FFB800;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: 1px solid rgba(255, 184, 0, 0.35);
+    border-radius: 999px;
+    padding: 4px 9px;
+}
+
+.service-block h3:focus-visible {
+    outline: 2px solid #FFB800;
+    outline-offset: 3px;
+}
+
+.service-block p {
+    color: #1F1F1F;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+.service-block ul {
+    padding-left: 20px;
+    color: #1F1F1F;
+    line-height: 1.7;
+}
+
+.service-block p,
+.service-block ul {
+    display: none;
+}
+
+.service-detail-panel {
+    position: sticky;
+    top: 92px;
+    min-height: 360px;
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 31, 31, 0.12);
+    border-top: 2px solid #FFB800;
+    border-radius: 14px;
+    padding: 24px;
+    box-shadow: 0 14px 36px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.service-detail-panel::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('images/HARMONY LOGO 2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 0.12;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.service-detail-panel > * {
+    position: relative;
+    z-index: 1;
+}
+
+.service-detail-panel.is-empty {
+    display: grid;
+    place-items: center;
+}
+
+.detail-placeholder {
+    color: #1F1F1F;
+    text-align: center;
+    line-height: 1.7;
+    max-width: 260px;
+}
+
+.detail-content {
+    animation: detail-fade-in 0.26s ease;
+}
+
+@keyframes detail-fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.detail-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.detail-symbol {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFB800;
+    border: 1px solid rgba(31, 31, 31, 0.12);
+    font-size: 1.4rem;
+    color: #1F1F1F;
+}
+
+.service-detail-panel h3 {
+    color: #FFB800;
+    font-size: 1.35rem;
+    line-height: 1.3;
+}
+
+.service-detail-panel p {
+    color: #1F1F1F;
+    line-height: 1.75;
+    margin-bottom: 14px;
+}
+
+.service-detail-panel ul {
+    color: #1F1F1F;
+    padding-left: 20px;
+    line-height: 1.8;
+}
+
+.services-cta {
+    text-align: center;
+    background-color: #FFFFFF;
+    border-top: 2px solid #FFB800;
+    border-bottom: 2px solid #FFB800;
+    padding: 55px 20px;
+}
+
+.services-cta h3 {
+    color: #FFB800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 14px;
+}
+
+.services-cta p {
+    max-width: 760px;
+    margin: 0 auto 22px;
+    color: #1F1F1F;
+    line-height: 1.8;
+}
+
+.cta-btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #FFB800;
+    color: #1F1F1F;
+    font-weight: bold;
+    padding: 12px 26px;
+    border-radius: 6px;
+}
+
+.cta-btn:hover {
+    background-color: #e7c300;
+}
+
+@media (max-width: 1024px) {
+    .services-shell {
+        grid-template-columns: 1fr;
+    }
+
+    .service-detail-panel {
+        position: static;
+        top: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .services-hero h2 {
+        font-size: 1.8em;
+    }
+
+    .services-shell {
+        grid-template-columns: 1fr;
+        padding: 35px 14px;
+    }
+
+    .services-page {
+        grid-template-columns: 1fr;
+    }
+
+    .service-detail-panel {
+        position: static;
+        top: auto;
+    }
+}
+

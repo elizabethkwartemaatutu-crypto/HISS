@@ -1,0 +1,360 @@
+html,
+body {
+    background-color: #FFFFFF;
+    color: #1F1F1F;
+}
+
+/* Hero */
+.ethics-hero {
+    background:
+        radial-gradient(circle at 16% 22%, rgba(255, 184, 0, 0.18), transparent 42%),
+        linear-gradient(130deg, rgba(255, 184, 0, 0.12), rgba(255, 184, 0, 0) 50%),
+        #FFFFFF;
+    color: #1F1F1F;
+    padding: 80px 20px 64px;
+    text-align: center;
+    border-top: 2px solid #FFB800;
+    border-bottom: 2px solid #FFB800;
+    position: relative;
+    overflow: hidden;
+}
+
+.ethics-hero::after {
+    content: '';
+    position: absolute;
+    right: -72px;
+    bottom: -88px;
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 184, 0, 0.16);
+    box-shadow: inset 0 0 0 26px rgba(255, 184, 0, 0.03);
+    pointer-events: none;
+}
+
+.ethics-hero h1 {
+    font-size: clamp(1.95rem, 4.8vw, 2.9rem);
+    color: #FFB800;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    line-height: 1.12;
+}
+
+.ethics-hero p {
+    font-size: 1.05rem;
+    color: #1F1F1F;
+    max-width: 790px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Introduction */
+.ethics-intro {
+    background-color: #FFFFFF;
+    color: #1F1F1F;
+    padding: 38px 20px 26px;
+    text-align: center;
+}
+
+.ethics-intro p {
+    max-width: 980px;
+    margin: 0 auto;
+    line-height: 1.85;
+    color: #1F1F1F;
+    font-size: 1.03rem;
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 31, 31, 0.12);
+    border-top: 2px solid #FFB800;
+    border-radius: 14px;
+    padding: 24px;
+}
+
+/* Mini image strip */
+.ethics-mini-gallery {
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 4px 20px 18px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.mini-shot {
+    min-height: 96px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #2f2f2f;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+.mini-shot img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.32s ease;
+}
+
+.mini-shot:hover img {
+    transform: scale(1.05);
+}
+
+/* Principles Grid */
+.ethics-principles {
+    background-color: #FFFFFF;
+    padding: 30px 20px 64px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 22px;
+    max-width: 1260px;
+    margin: 0 auto;
+}
+
+.principle-card {
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 31, 31, 0.12);
+    border-top: 2px solid #FFB800;
+    border-radius: 14px;
+    padding: 24px 22px;
+    transition: border-color 0.28s ease, transform 0.28s ease, box-shadow 0.28s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.principle-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('images/HARMONY LOGO 2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.06;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.principle-card::after {
+    content: '';
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    width: 22px;
+    height: 22px;
+    border-radius: 6px;
+    background: url('images/HARMONY LOGO 2.png') center / contain no-repeat;
+    opacity: 0.58;
+    box-shadow: 0 0 0 1px rgba(255, 184, 0, 0.24);
+    z-index: 1;
+}
+
+.principle-card:hover::before {
+    opacity: 0.14;
+}
+
+.principle-card:hover {
+    border-color: #8a7524;
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.5);
+}
+
+.principle-number,
+.principle-card h3,
+.principle-card ul,
+.principle-quote {
+    position: relative;
+    z-index: 1;
+}
+
+.principle-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #FFB800, #FFC124);
+    color: #000;
+    font-size: 1.25rem;
+    font-weight: 700;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    margin-bottom: 12px;
+    box-shadow: 0 8px 18px rgba(255, 184, 0, 0.22);
+}
+
+.principle-card h3 {
+    color: #FFB800;
+    font-size: 1.06rem;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.35;
+}
+
+.principle-card ul {
+    list-style: disc;
+    padding-left: 20px;
+    color: #1F1F1F;
+    line-height: 1.75;
+    margin-bottom: 14px;
+}
+
+.principle-card li {
+    margin-bottom: 5px;
+}
+
+.principle-quote {
+    background-color: #F9F2CC;
+    border: 1px solid rgba(31, 31, 31, 0.12);
+    border-left: 3px solid #FFB800;
+    padding: 11px 14px;
+    margin-top: 12px;
+    font-style: italic;
+    color: #1F1F1F;
+    font-size: 0.92rem;
+    border-radius: 8px;
+}
+
+/* Image Gallery */
+.ethics-image-gallery {
+    background-color: #FFFFFF;
+    padding: 62px 20px;
+    text-align: center;
+}
+
+.ethics-image-gallery h2 {
+    font-size: 2rem;
+    color: #FFB800;
+    margin-bottom: 34px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.gallery-item {
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 31, 31, 0.12);
+    border-top: 2px solid #FFB800;
+    border-radius: 14px;
+    overflow: hidden;
+    transition: border-color 0.28s ease, transform 0.28s ease, box-shadow 0.28s ease;
+}
+
+.gallery-item:hover {
+    border-color: #8a7524;
+    transform: translateY(-4px);
+    box-shadow: 0 12px 26px rgba(0, 0, 0, 0.45);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.35s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.04);
+}
+
+.gallery-item p {
+    color: #FFB800;
+    padding: 14px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    font-size: 1rem;
+}
+
+/* Closing */
+.ethics-closing {
+    background:
+        radial-gradient(ellipse at center, rgba(255, 184, 0, 0.1), transparent 68%),
+        #FFFFFF;
+    color: #1F1F1F;
+    padding: 66px 20px;
+    text-align: center;
+    border-top: 2px solid #FFB800;
+    border-bottom: 2px solid #FFB800;
+}
+
+.ethics-closing h2 {
+    font-size: clamp(1.6rem, 3.2vw, 2.2rem);
+    color: #FFB800;
+    margin-bottom: 22px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.ethics-closing p {
+    max-width: 940px;
+    margin: 0 auto;
+    line-height: 1.9;
+    color: #1F1F1F;
+    font-size: 1.03rem;
+}
+
+@media (max-width: 1024px) {
+    .ethics-mini-gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .ethics-mini-gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .ethics-principles {
+        grid-template-columns: 1fr;
+    }
+
+    .ethics-hero h1 {
+        letter-spacing: 1.5px;
+    }
+
+    .gallery-item img {
+        height: 240px;
+    }
+}
+
+@media (max-width: 640px) {
+    .ethics-hero {
+        padding: 62px 14px 50px;
+    }
+
+    .ethics-intro,
+    .ethics-mini-gallery,
+    .ethics-principles,
+    .ethics-image-gallery,
+    .ethics-closing {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .ethics-mini-gallery {
+        grid-template-columns: 1fr;
+        padding-top: 2px;
+        padding-bottom: 12px;
+    }
+
+    .ethics-intro p,
+    .principle-card {
+        padding: 20px;
+    }
+
+    .ethics-closing {
+        padding-top: 54px;
+        padding-bottom: 54px;
+    }
+}
+
