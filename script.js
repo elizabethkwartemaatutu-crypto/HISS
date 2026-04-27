@@ -181,31 +181,6 @@ if (typewriterEl) {
     type();
 }
 
-// Expand/collapse slider copy on mobile and tablet
-const sliderMoreToggle = document.querySelector('.slider-more-toggle');
-const sliderOverlayInner = document.querySelector('.slider-overlay-inner');
-
-if (sliderMoreToggle && sliderOverlayInner) {
-    const updateToggleLabel = (isExpanded) => {
-        sliderMoreToggle.textContent = isExpanded ? 'Less' : '...';
-        sliderMoreToggle.setAttribute('aria-expanded', String(isExpanded));
-    };
-
-    sliderMoreToggle.addEventListener('click', () => {
-        const isExpanded = sliderOverlayInner.classList.toggle('is-expanded');
-        updateToggleLabel(isExpanded);
-    });
-
-    window.addEventListener('resize', () => {
-        if (window.innerWidth > 768) {
-            sliderOverlayInner.classList.remove('is-expanded');
-            updateToggleLabel(false);
-        }
-    });
-
-    updateToggleLabel(false);
-}
-
 // =====================================================================
 // Scroll-down chevron — smooth scroll to next section
 // =====================================================================
