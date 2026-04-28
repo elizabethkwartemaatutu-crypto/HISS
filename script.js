@@ -146,13 +146,13 @@ if (serviceList && detailPanel) {
 const typewriterEl = document.getElementById('typewriter-text');
 if (typewriterEl) {
     const phrases = [
+        'Licensed And Trusted.',
+        'We Simplify The Complex.',
         'We Find The Truth.',
         'Surveillance Experts.',
         'Protecting What Matters.',
         'Discreet. Professional.',
-        'Evidence You Can Trust.',
-        'Licensed And Trusted.',
-        'We Simplify The Complex.'
+        'Evidence You Can Trust.'
     ];
     let phraseIndex = 0;
     let charIndex = 0;
