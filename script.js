@@ -150,7 +150,9 @@ if (typewriterEl) {
         'Surveillance Experts.',
         'Protecting What Matters.',
         'Discreet. Professional.',
-        'Evidence You Can Trust.'
+        'Evidence You Can Trust.',
+        'Licensed And Trusted.',
+        'We Simplify The Complex.'
     ];
     let phraseIndex = 0;
     let charIndex = 0;
