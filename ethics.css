@@ -358,3 +358,37 @@ body {
     }
 }
 
+/* Ethics page dark theme overrides */
+.ethics-hero,
+.ethics-intro,
+.ethics-intro p,
+.ethics-principles,
+.principle-card,
+.ethics-image-gallery,
+.gallery-item,
+.ethics-closing {
+    background: #232323 !important;
+    background-color: #232323 !important;
+    color: #F4F4F4;
+}
+
+.ethics-hero p,
+.ethics-intro p,
+.principle-card ul,
+.principle-quote,
+.ethics-closing p,
+.gallery-item p {
+    color: #E9E9E9;
+}
+
+.principle-card,
+.gallery-item,
+.ethics-intro p,
+.principle-quote {
+    border-color: rgba(255, 255, 255, 0.16);
+}
+
+.principle-quote {
+    background-color: #2B2B2B;
+}
+

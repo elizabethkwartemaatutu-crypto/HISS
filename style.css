@@ -1609,3 +1609,57 @@ body.is-transitioning > :not(.page-transition):not(header):not(footer) {
     }
 }
 
+/* Global light-black theme overrides */
+:root {
+    --site-text: #F4F4F4;
+    --site-muted: #CFCFCF;
+    --site-border: #3A3A3A;
+}
+
+header,
+nav,
+.activities,
+.why-choose,
+.video-hero-section,
+.services-section,
+.privacy-section,
+.cta-banner,
+footer,
+.service-card,
+.stat,
+.privacy-inner,
+.cta-inner,
+.home-service-detail-panel {
+    background-color: #232323 !important;
+    color: #F4F4F4;
+}
+
+.activities p,
+.activities li,
+.why-choose p,
+.hero-column p,
+.services-section p,
+.privacy-section p,
+.privacy-section li,
+.cta-banner p,
+.detail-placeholder,
+.service-note,
+footer p,
+footer span,
+footer a {
+    color: #E9E9E9;
+}
+
+.nav-links a {
+    color: #F4F4F4;
+    border-color: rgba(255, 255, 255, 0.14);
+    background: rgba(255, 184, 0, 0.15);
+}
+
+.service-card,
+.stat,
+.privacy-inner,
+.home-service-detail-panel {
+    border-color: rgba(255, 255, 255, 0.16);
+}
+

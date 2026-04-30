@@ -318,3 +318,29 @@ body {
     }
 }
 
+/* Services page dark theme overrides */
+.services-hero,
+.services-shell,
+.service-block,
+.service-detail-panel,
+.services-cta {
+    background: #232323 !important;
+    background-color: #232323 !important;
+    color: #F4F4F4;
+}
+
+.services-hero p,
+.service-block p,
+.service-block ul,
+.service-detail-panel p,
+.service-detail-panel ul,
+.detail-placeholder,
+.services-cta p {
+    color: #E9E9E9;
+}
+
+.service-block,
+.service-detail-panel {
+    border-color: rgba(255, 255, 255, 0.16);
+}
+

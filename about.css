@@ -381,3 +381,40 @@ body {
         padding: 22px;
     }
 }
+
+/* About page dark theme overrides */
+.about-hero,
+.about-visuals,
+.about-page,
+.about-card,
+.about-credentials,
+.about-band,
+.about-cta,
+.about-contact-links a,
+.about-visual {
+    background: #232323 !important;
+    background-color: #232323 !important;
+    color: #F4F4F4;
+}
+
+.about-hero p,
+.about-card p,
+.about-card li,
+.about-band-copy p,
+.about-band-copy li,
+.about-credentials p,
+.about-cta p,
+.about-contact-heading,
+.about-contact-links a,
+.about-stat-list span {
+    color: #E9E9E9;
+}
+
+.about-card,
+.about-credentials,
+.about-band,
+.about-visual,
+.about-contact-links a,
+.about-stat-list span {
+    border-color: rgba(255, 255, 255, 0.16);
+}

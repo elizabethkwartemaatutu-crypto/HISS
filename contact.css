@@ -344,3 +344,50 @@ body {
         padding: 20px;
     }
 }
+
+/* Contact page dark theme overrides */
+.contact-hero,
+.contact-visuals,
+.contact-page,
+.contact-card,
+.contact-form-copy,
+.contact-form,
+.contact-cta,
+.contact-visual {
+    background: #232323 !important;
+    background-color: #232323 !important;
+    color: #F4F4F4;
+}
+
+.contact-hero p,
+.contact-card p,
+.contact-card address,
+.contact-list,
+.contact-list li,
+.contact-form-copy p,
+.contact-cta p,
+.contact-card a,
+.contact-socials a,
+.contact-form label {
+    color: #E9E9E9;
+}
+
+.contact-socials a,
+.contact-card,
+.contact-form-copy,
+.contact-form,
+.contact-visual {
+    border-color: rgba(255, 255, 255, 0.16);
+}
+
+.contact-form input,
+.contact-form textarea {
+    background-color: #1D1D1D;
+    color: #F4F4F4;
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #BDBDBD;
+}
