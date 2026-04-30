@@ -120,12 +120,11 @@ nav h1 {
     border-radius: 14px;
     border: none;
     background-color: #000000;
-    padding: 0;
+    padding: 4px;
     object-fit: contain;
     object-position: center;
     box-shadow: none;
     filter: none;
-    mix-blend-mode: multiply;
 }
 
 .nav-toggle {
@@ -1682,6 +1681,5 @@ footer a {
     border: none !important;
     background-color: #000000 !important;
     box-shadow: none !important;
-    mix-blend-mode: multiply !important;
 }
 
