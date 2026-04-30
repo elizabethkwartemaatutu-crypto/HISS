@@ -115,7 +115,7 @@ body {
     position: absolute;
     inset: 0;
     background-image: url('images/HARMONY LOGO 2.png');
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     opacity: 0.06;
