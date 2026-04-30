@@ -1,6 +1,6 @@
 html,
 body {
-    background-color: #1F1F1F;
+    background-color: #000000;
     color: #F4F4F4;
 }
 
@@ -324,8 +324,8 @@ body {
 .service-block,
 .service-detail-panel,
 .services-cta {
-    background: #232323 !important;
-    background-color: #232323 !important;
+    background: #000000 !important;
+    background-color: #000000 !important;
     color: #F4F4F4;
 }
 
