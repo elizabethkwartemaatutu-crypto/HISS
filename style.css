@@ -943,8 +943,8 @@ footer {
     width: 42px;
     height: 42px;
     border-radius: 50%;
-    border: 1px solid rgba(31, 31, 31, 0.12);
-    background-color: #FFFFFF;
+    border: 1px solid rgba(255, 184, 0, 0.55);
+    background-color: #1A1A1A;
     transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -970,10 +970,10 @@ footer {
     height: 42px;
     font-size: 1.2rem;
     line-height: 1;
-    color: var(--site-text);
+    color: #F4F4F4;
     border-radius: 50%;
-    border: 1px solid rgba(31, 31, 31, 0.12);
-    background-color: #FFFFFF;
+    border: 1px solid rgba(255, 184, 0, 0.55);
+    background-color: #1A1A1A;
     transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -1691,14 +1691,12 @@ footer a {
 /* Ensure text is readable on white/light buttons */
 .footer-contact-link,
 .footer-contact-link span,
-.footer-email-icon,
 .btn-secondary {
     color: #111111 !important;
     font-weight: 700;
 }
 
-.footer-contact-link,
-.footer-email-icon {
+.footer-contact-link {
     background-color: #FFFFFF;
 }
 

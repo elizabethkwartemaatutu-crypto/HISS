@@ -192,10 +192,11 @@ body {
 }
 
 .contact-socials a {
-    border: 1px solid rgba(31, 31, 31, 0.12);
+    border: 1px solid rgba(255, 184, 0, 0.55);
     border-radius: 999px;
     padding: 10px 16px;
-    background-color: #FFFFFF;
+    background-color: #1A1A1A;
+    color: #F4F4F4;
     transition: transform 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
 }
 
