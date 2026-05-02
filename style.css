@@ -292,6 +292,82 @@ nav h1 {
     height: auto;
 }
 
+/* Our Capabilities Section */
+.capabilities-section {
+    padding: 70px 20px;
+    background: #0d0d0d;
+    background-image: radial-gradient(rgba(255, 184, 0, 0.07) 1px, transparent 1px);
+    background-size: 26px 26px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.capabilities-section .section-title {
+    color: #FFB800;
+    margin-bottom: 14px;
+}
+
+.capabilities-intro {
+    max-width: 780px;
+    margin: 0 auto 48px;
+    color: #c0c0c0;
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+.capabilities-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.capability-card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 184, 0, 0.22);
+    border-top: 3px solid #FFB800;
+    border-radius: 16px;
+    padding: 30px 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+    transition: background 0.24s ease, transform 0.24s ease, box-shadow 0.24s ease, border-color 0.24s ease;
+}
+
+.capability-card:hover {
+    background: rgba(255, 184, 0, 0.09);
+    border-color: #FFB800;
+    transform: translateY(-6px);
+    box-shadow: 0 14px 36px rgba(0, 0, 0, 0.55);
+}
+
+.capability-icon {
+    font-size: 2.6rem;
+    line-height: 1;
+    display: block;
+    filter: drop-shadow(0 0 10px rgba(255, 184, 0, 0.35));
+}
+
+.capability-card h3 {
+    color: #FFB800;
+    font-size: 1.05rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    margin: 0;
+}
+
+.capability-card p {
+    color: #b8b8b8;
+    font-size: 0.92rem;
+    line-height: 1.7;
+    margin: 0;
+}
+
 /* Why Choose */
 .why-choose {
     padding: 60px 20px;
@@ -1180,6 +1256,16 @@ footer > p:last-of-type {
     .home-service-detail-panel {
         position: static;
         top: auto;
+    }
+
+    .capabilities-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .capabilities-grid {
+        grid-template-columns: 1fr;
     }
 }
 
